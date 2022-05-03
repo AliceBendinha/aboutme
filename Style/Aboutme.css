@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: sans-serif; /* mudar tipo de letra*/
+    font-style: normal;
+    font-size:medium ;
+    background-color: #2f4e86;
+}
+#cabecalho{
+    background-color:rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between; /* alinhando os elementos na horizontal*/
+    padding: 2px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 0px 0px 9px 9px;
+       opacity: 90%; 
+}
+#logo{
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+}
+#menu{
+    display: flex;
+    align-items: center; /* alinhando os elementos na vertical*/
+  margin-right: 20px;
+}#menu li{
+    display: inline-block;
+    margin-left: 18px;
+}#menu a{
+    cursor:pointer; /*mudança do formato do cursor*/
+    text-decoration:none;
+    color: whitesmoke;
+    transition:all 1s; /* tempo de transição*/
+    font-size: 20px;
+}
+#menu a:hover{
+   
+    transition:all 1s; /* tempo de transição*/
+    font-size: 25px;
+    color: red;
+}
+#banner{
+    margin-top: 8px;
+    width: 100%;
+    text-align: center; 
+    position: relative;
+    color: #f1f4fa;
+}
+#banner ul{
+    display: flex;
+    margin-left: 50px;
+    
+}
+#banner li{
+    display: inline-block;
+    color: #5137e4;
+    padding: 5px;  
+}
+#banner img{
+    width: 100%;
+}
+.text{
+    position: absolute;
+    bottom: 400px;
+    text-align:center;   
+    padding: 10px;
+    font-family:sans-serif;
+    font-size: 20px;
+    left:15px;  
+}#banner a:hover{
+   color: #f1f4fa;
+   font-size: 25px;
+   transition:all 1s;
+}
+#trabalhos{  
+    padding-bottom: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+  justify-content: center;
+  position: relative;
+
+}
+.cartao{
+   position: relative;
+    cursor: pointer;
+    text-align: left;
+    width: 330px;
+    border-radius: 16px;
+}
+.cartao img{
+    position: relative;
+    width: 100%;   
+    bottom: 120px;  
+}
+.cartao .conteudo{
+    bottom: 220px;  
+    padding: 20px;
+    position:relative;
+    background-color: #183b7c;
+}
+.cartao .conteudo h2{
+   
+    color: whitesmoke;
+     
+ }
+.cartao .conteudo p{
+    font-size: 14px;
+    color: #0fb9ec;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+
+.cartao .conteudo h6{
+    margin-bottom: 12px;
+    width: 120px;
+    padding: 8px;
+    color: whitesmoke;
+     
+ } .cartao .conteudo a{ 
+     color:whitesmoke;
+    text-decoration: none;
+}
+.cartao #meio{
+    background-color: #28c0e6;
+}
+#meio p{
+    color: #5137e4
+}
+.icones{
+    position: absolute;
+    bottom: 50px;
+}
+main{
+    background-color: white;
+   position: relative;
+}
+#publicidade{
+    margin-top: 8px;
+    width: 100%;
+    text-align: center; 
+    position: relative;
+    color: #f1f4fa;
+    bottom: 550px;
+   
+}
+#publicidade img{
+    width: 100%;   
+}
+#fundo{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+#fundo img{
+    width: 100%;
+}
+.FormCaixa{   
+    justify-content: space-between;
+    position: absolute;
+    background-color: rgba(3, 3, 3, 0.4);  /*transparência */
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    bottom: 0px;
+    width: 100%;
+}
+.FormCaixa h1{
+    text-align:center;
+}
+.FormCaixa h3{
+    margin:5px;
+}
+.habilidade{
+   color: #fff;
+    width: 500px;
+    margin: 60px auto;
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.habilidade li{
+    margin: 20px 0;
+    padding: 8px;  
+}
+.bar{
+    background: #353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.bar :hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+.bar span{
+    height: 20px;
+    float:left;
+    background: linear-gradient(135deg, rgba(236, 0, 140, 1), rgba(252,103,0,1.0));
+}
+.Web{
+    width: 60%;
+    animation: Web 3s;
+}
+.Desktop{
+    width: 60%;
+    animation: Desktop 3s;
+}
+.Fotografia{
+    width: 90%;
+    animation: Fotografia 3s;
+}
+.Confeitaria{
+    width: 70%;
+    animation: Confeitaria 3s;
+}
+@keyframes Web{
+    0%{
+        width: 0%;
+    }100%{
+        width: 60%;
+    }
+}
+@keyframes Desktop{
+    0%{
+        width: 0%;
+    }100%{
+        width: 60%;
+    }
+}
+@keyframes Fotografia{
+    0%{
+        width: 0%;
+    }100%{
+        width: 90%;
+    }
+}
+@keyframes Confeitaria{
+    0%{
+        width: 0%;
+    }100%{
+        width: 70%;
+    }
+}
+footer{
+    background-color: #2f4e86;
+    padding:2px;
+    margin-top: 10px;
+    color: whitesmoke;
+    text-align: center; /* alinhar o texto ao centro*/  
+}#Footer img{
+    width: 36px; 
+    border-radius: 18px 18px 18px 18px;
+   margin-left: 5px;
+}
